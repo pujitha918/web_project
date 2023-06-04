@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Management Tool</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Project Management Tool</h1>
+  </header>
+
+  <main>
+    <section id="tasks-section">
+      <h2>Tasks</h2>
+      <ul id="task-list">
+        <!-- Dynamic task items will be added here -->
+      </ul>
+      <form id="task-form">
+        <input type="text" id="task-input" placeholder="Add a task">
+        <select id="assignee-select">
+          <option value="">Assignee</option>
+          <!-- Dynamic list of users will be added here -->
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <section id="users-section">
+      <h2>Users</h2>
+      <ul id="user-list">
+        <!-- Dynamic user items will be added here -->
+      </ul>
+      <form id="user-form">
+        <input type="text" id="user-input" placeholder="Add a user">
+        <button type="submit">Add User</button>
+      </form>
+    </section>
+
+    <section id="chat-section">
+      <h2>Chat</h2>
+      <ul id="message-list">
+        <!-- Dynamic chat messages will be added here -->
+      </ul>
+      <form id="message-form">
+        <input type="text" id="message-input" placeholder="Type a message">
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
